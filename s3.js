@@ -41,7 +41,7 @@ function getSignedUrl(objectKey) {
     Key: objectKey,
     Expires: 0
   };
-
+ 
   return s3.getSignedUrl("getObject", params);
 }
 
